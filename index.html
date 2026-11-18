@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ricardo Gasparelo — Gestão, Dados, Automação e Marketing</title>
-<meta name="description" content="Portfólio de Ricardo Friedrich Gasparelo: gestão de projetos, dados, automação com IA e marketing. Administração · UFPR.">
+<meta name="description" content="Portfólio de Ricardo Friedrich Gasparelo: gestão de projetos, dados, marketing e projetos com IA (agentes, skills do Claude Code e o app Business English). Administração · UFPR.">
 <meta name="theme-color" content="#0a0a0b">
 <meta property="og:title" content="Ricardo Gasparelo — Portfólio">
-<meta property="og:description" content="Gestão, dados, automação com IA e marketing. Estudante de Administração na UFPR.">
+<meta property="og:description" content="Gestão, dados, marketing e projetos com IA: agentes, skills e um app de inglês estilo Duolingo. Estudante de Administração na UFPR.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0b'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-family='Georgia' font-style='italic' font-size='34' fill='%23d7ff3a'%3ERG%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -99,7 +99,7 @@ img,svg,canvas{display:block}
 .logo__mark{width:34px;height:34px;border-radius:10px;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-family:var(--serif);font-style:italic;font-size:18px;transition:transform .6s var(--ease)}
 .logo:hover .logo__mark{transform:rotate(-12deg) scale(1.06)}
 .nav__links{display:flex;gap:6px;align-items:center}
-.roll{position:relative;display:inline-flex;overflow:hidden;padding:8px 12px;font-size:14px;font-weight:500;color:var(--ink-2);border-radius:999px}
+.roll{position:relative;display:inline-flex;overflow:hidden;white-space:nowrap;padding:8px 12px;font-size:14px;font-weight:500;color:var(--ink-2);border-radius:999px}
 .roll span{display:block;transition:transform .5s var(--ease)}
 .roll span:last-child{position:absolute;left:12px;top:8px;transform:translateY(130%);color:var(--accent)}
 .roll:hover span:first-child{transform:translateY(-130%)}
@@ -119,6 +119,8 @@ img,svg,canvas{display:block}
 .menu-btn i::before{top:0}.menu-btn i::after{bottom:0}
 .menu-open .menu-btn i::before{transform:translateY(3.25px) rotate(45deg)}
 .menu-open .menu-btn i::after{transform:translateY(-3.25px) rotate(-45deg)}
+@media (max-width:1240px){.clock{display:none}}
+@media (max-width:1080px){.nav__links{gap:0}.roll{padding:8px 9px}}
 @media (max-width:960px){.nav__links,.clock{display:none}.menu-btn{display:inline-flex}.nav__right .pill-btn{display:none}}
 
 .menu{position:fixed;inset:0;z-index:105;background:var(--bg-2);padding:110px var(--gutter) var(--gutter);display:flex;flex-direction:column;justify-content:space-between;
@@ -414,6 +416,34 @@ section{position:relative}
 .stamp b{font-family:var(--sans);font-size:17px;letter-spacing:-.02em;display:block}
 @keyframes stamp{to{transform:rotate(-18deg) scale(1);opacity:1}}
 .tix__note{position:absolute;left:0;bottom:0;color:var(--muted)}
+
+
+/* =========================================================
+   BUSINESS ENGLISH PANEL + LABORATÓRIO DE IA
+   ========================================================= */
+.panel__links{display:flex;gap:20px;flex-wrap:wrap;margin-top:14px}
+.panel__links .ulink{font-size:15px;color:var(--ink)}
+.bephones{position:relative;flex:1;display:flex;align-items:center;justify-content:center;gap:5%;min-height:0;padding:10px 0}
+.bephone{margin:0;width:min(40%,250px);aspect-ratio:1/2;border-radius:30px;border:7px solid #1c2232;overflow:hidden;background:#0b1220;box-shadow:0 40px 80px -30px rgba(0,0,0,.9)}
+.bephone img{width:100%;height:100%;object-fit:cover;object-position:top}
+.bephone:nth-child(1){transform:translateY(-4%) rotate(-3deg)}
+.bephone:nth-child(2){transform:translateY(5%) rotate(3deg)}
+.bebadge{position:absolute;left:50%;bottom:4px;transform:translateX(-50%);padding:7px 14px;border-radius:999px;background:var(--bg);border:1px solid var(--line-2);color:#7be08f;white-space:nowrap}
+.lab2__intro{max-width:420px;color:var(--ink-2);margin:0}
+.lab2{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:1000px){.lab2{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.lab2{grid-template-columns:1fr}}
+.lab2__card{border:1px solid var(--line);border-radius:20px;padding:24px;background:linear-gradient(160deg,var(--bg-3),var(--bg-2));display:flex;flex-direction:column;gap:10px;transition:transform .5s var(--ease),border-color .4s}
+.lab2__card:hover{transform:translateY(-4px);border-color:rgba(215,255,58,.4)}
+.lab2__top{display:flex;justify-content:space-between;gap:10px;color:var(--muted)}
+.lab2__st{color:#7be08f;white-space:nowrap}
+.lab2__card h4{font-size:24px;line-height:1.1;letter-spacing:-.03em;font-weight:500;margin:4px 0 0}
+.lab2__card p{margin:0;color:var(--ink-2);font-size:15px}
+.lab2__stack{color:var(--muted);font-size:11px;margin-top:auto;padding-top:6px;text-transform:none;letter-spacing:.02em}
+.lab2__links{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;border-top:1px solid var(--line);padding-top:12px}
+.lab2__links a{color:var(--ink);transition:color .3s}
+.lab2__links a:hover{color:var(--accent)}
+.lab2__links span{color:var(--muted)}
 
 /* =========================================================
    MORE PROJECTS (grid + filter + tilt)
@@ -720,6 +750,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <a class="roll" href="#sobre"><span>Sobre</span><span aria-hidden="true">Sobre</span></a>
       <a class="roll" href="#projetos"><span>Projetos</span><span aria-hidden="true">Projetos</span></a>
       <a class="roll" href="#ia"><span>IA na prática</span><span aria-hidden="true">IA na prática</span></a>
+      <a class="roll" href="#lab"><span>Laboratório</span><span aria-hidden="true">Laboratório</span></a>
       <a class="roll" href="#competencias"><span>Competências</span><span aria-hidden="true">Competências</span></a>
       <a class="roll" href="#trajetoria"><span>Trajetória</span><span aria-hidden="true">Trajetória</span></a>
       <a class="roll" href="#contato"><span>Contato</span><span aria-hidden="true">Contato</span></a>
@@ -738,11 +769,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <a href="#sobre"><span><small>01</small>Sobre</span></a>
     <a href="#projetos"><span><small>02</small>Projetos</span></a>
     <a href="#ia"><span><small>03</small>IA na prática</span></a>
-    <a href="#competencias"><span><small>04</small>Competências</span></a>
-    <a href="#trajetoria"><span><small>05</small>Trajetória</span></a>
-    <a href="#contato"><span><small>06</small>Contato</span></a>
+    <a href="#lab"><span><small>04</small>Laboratório de IA</span></a>
+    <a href="#competencias"><span><small>05</small>Competências</span></a>
+    <a href="#trajetoria"><span><small>06</small>Trajetória</span></a>
+    <a href="#contato"><span><small>07</small>Contato</span></a>
   </nav>
-  <div class="menu__foot mono"><span>ricardogasparelo@gmail.com</span><a href="Curriculo_Ricardo_Gasparelo.pdf" download class="accent">Baixar currículo ↓</a></div>
+  <div class="menu__foot mono"><span>ricardogasparelo@gmail.com</span><a href="https://github.com/ricardogasparelo" target="_blank" rel="noopener">GitHub ↗</a><a href="Curriculo_Ricardo_Gasparelo.pdf" download class="accent">Baixar currículo ↓</a></div>
 </div>
 
 <main id="conteudo">
@@ -784,7 +816,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="marquee__item">Gestão de projetos <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg> Dados &amp; KPIs <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg> Automação com IA <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg> Comercial <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg> Eventos <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg> Marketing <svg class="star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></div>
   </div>
   <div class="marquee__row marquee__row--outline" data-marquee="-1">
-    <div class="marquee__item">Claude Code · <em>n8n</em> · Python · <em>Looker Studio</em> · DaVinci Resolve API · <em>Remotion</em> · RD Station · <em>Google Analytics</em> · </div>
+    <div class="marquee__item">Claude Code · <em>Claude Skills</em> · Agentes de IA · <em>n8n</em> · Python · <em>Looker Studio</em> · DaVinci Resolve API · <em>Remotion</em> · RD Station · <em>Google Analytics</em> · </div>
   </div>
 </div>
 
@@ -804,7 +836,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         </div>
       </aside>
       <div>
-        <p class="about__text" data-words>Gosto de problemas que cruzam áreas. Na JR Consultoria lidero o marketing, organizo processos entre times e coloco *dados* no centro das decisões. Quando uma tarefa se repete, eu *automatizo:* com Claude Code, n8n e Python criei relatórios que se atualizam sozinhos e um agente que edita vídeos dentro do DaVinci Resolve. Antes disso, *empreendi* em e-commerce, e hoje levo essa visão de negócio para eventos, parcerias e vendas.</p>
+        <p class="about__text" data-words>Gosto de problemas que cruzam áreas. Na JR Consultoria lidero o marketing, organizo processos entre times e coloco *dados* no centro das decisões. Quando uma tarefa se repete, eu *automatizo:* com Claude Code, n8n e Python criei relatórios que se atualizam sozinhos, um agente que edita vídeos dentro do DaVinci Resolve, skills que transformam uma ideia em Reels pronto e um *app* de inglês no estilo do Duolingo. Antes disso, *empreendi* em e-commerce, e hoje levo essa visão de negócio para eventos, parcerias e vendas.</p>
         <div class="about__facts">
           <div class="fact" data-reveal style="--d:0s"><span class="mono">Hoje</span>Gerente de Marketing, JR Consultoria</div>
           <div class="fact" data-reveal style="--d:.1s"><span class="mono">Formação</span>Administração, UFPR (em andamento)</div>
@@ -829,7 +861,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="label mono"><span data-scramble>02 — Projetos em destaque</span></div>
       <h2 class="h2"><span class="line-mask"><span class="split-up" data-split data-reveal-split>Trabalho</span></span><span class="line-mask"><span class="split-up serif it" data-split data-reveal-split style="--d:.15s">selecionado</span></span></h2>
     </div>
-    <p data-reveal>Quatro projetos que mostram como eu penso: entender o problema, estruturar o processo e entregar algo que funciona. Role para navegar.</p>
+    <p data-reveal>Cinco projetos que mostram como eu penso: entender o problema, estruturar o processo e entregar algo que funciona. Role para navegar.</p>
   </div>
 
   <div class="hscroll">
@@ -839,7 +871,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <!-- PANEL 1 -->
         <article class="panel" style="--glow:rgba(123,92,255,.28)" data-cursor="Role">
           <div class="panel__text">
-            <div class="panel__idx mono"><span>01 / 04</span><span>2026</span></div>
+            <div class="panel__idx mono"><span>01 / 05</span><span>2026</span></div>
             <div class="panel__cat mono">IA · Automação · Vídeo</div>
             <h3>ResolveAgent<br><span class="serif it">edita vídeos sozinho</span></h3>
             <p>Agente criado com o Claude Code que opera o DaVinci Resolve Studio pela API Python. O editor pede em linguagem natural e o agente planeja, executa e mostra cada etapa para aprovação.</p>
@@ -850,6 +882,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
               <li>14 skills e 22 receitas; em uso por mim e pelos consultores de marketing</li>
             </ul>
             <div class="tags"><span class="tag">Claude Code</span><span class="tag">Python</span><span class="tag">DaVinci API</span><span class="tag">Whisper</span><span class="tag">Remotion</span><span class="tag">ffmpeg</span></div>
+            <div class="panel__links"><a class="ulink" href="https://github.com/ricardogasparelo/resolve-agent" target="_blank" rel="noopener">Ver no GitHub ↗</a></div>
           </div>
           <div class="panel__vis">
             <div class="mock">
@@ -883,10 +916,35 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           </div>
         </article>
 
+        <!-- PANEL: BUSINESS ENGLISH -->
+        <article class="panel" style="--glow:rgba(77,141,255,.30)" data-cursor="Role">
+          <div class="panel__text">
+            <div class="panel__idx mono"><span>02 / 05</span><span>2026</span></div>
+            <div class="panel__cat mono">IA · Produto · App</div>
+            <h3>Business English<br><span class="serif it">um Duolingo de negócios</span></h3>
+            <p>App que eu criei com o Claude Code para aprender inglês de reuniões, e-mails, vendas e pitch. Uma avaliação inicial monta o plano de estudos, que se ajusta sozinho toda semana.</p>
+            <ul>
+              <li>78 lições do A1 ao C2, com escuta, fala e pronúncia</li>
+              <li>Teste adaptativo e plano por área de uso e habilidade</li>
+              <li>11 conversas guiadas, missões, ofensiva e relatório semanal</li>
+              <li>Conta na nuvem e instalável no celular, sem custo de API</li>
+            </ul>
+            <div class="tags"><span class="tag">Claude Code</span><span class="tag">JavaScript</span><span class="tag">PWA</span><span class="tag">Netlify Functions</span><span class="tag">Web Speech</span></div>
+            <div class="panel__links"><a class="ulink" href="https://zingy-custard-e9831e.netlify.app" target="_blank" rel="noopener">Abrir o app ↗</a><a class="ulink" href="https://github.com/ricardogasparelo/business-english-app" target="_blank" rel="noopener">Ver no GitHub ↗</a></div>
+          </div>
+          <div class="panel__vis">
+            <div class="bephones">
+              <figure class="bephone"><img src="imagens/business-english-trilha.jpg" alt="Trilha do app com o plano de hoje" loading="lazy" width="500" height="1000"></figure>
+              <figure class="bephone"><img src="imagens/business-english-plano.jpg" alt="Tela Meu plano com o diagnóstico por habilidade" loading="lazy" width="500" height="1000"></figure>
+              <span class="bebadge mono">● no ar · instalável no celular</span>
+            </div>
+          </div>
+        </article>
+
         <!-- PANEL 2 -->
         <article class="panel" style="--glow:rgba(215,255,58,.16)" data-cursor="Role">
           <div class="panel__text">
-            <div class="panel__idx mono"><span>02 / 04</span><span>2026</span></div>
+            <div class="panel__idx mono"><span>03 / 05</span><span>2026</span></div>
             <div class="panel__cat mono">Dados · Automação</div>
             <h3>Relatórios que<br><span class="serif it">se montam sozinhos</span></h3>
             <p>Pipeline que tira a coleta manual da rotina e entrega a leitura do desempenho de todos os canais em um só lugar, com recomendações para a próxima decisão.</p>
@@ -951,7 +1009,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <!-- PANEL 3 -->
         <article class="panel" style="--glow:rgba(61,107,255,.28)" data-cursor="Role">
           <div class="panel__text">
-            <div class="panel__idx mono"><span>03 / 04</span><span>JR Consultoria · 2026</span></div>
+            <div class="panel__idx mono"><span>04 / 05</span><span>JR Consultoria · 2026</span></div>
             <div class="panel__cat mono">Gestão de evento · Parcerias</div>
             <h3>Trajetória<br><span class="serif it">feira de carreiras</span></h3>
             <p>Feira que conecta grandes empresas a estudantes da UFPR, com vagas de estágio e trainee e palestras dadas pelos recrutadores das empresas. Fui responsável pela comunicação de ponta a ponta.</p>
@@ -979,7 +1037,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <!-- PANEL 4 -->
         <article class="panel" style="--glow:rgba(255,106,61,.22)" data-cursor="Role">
           <div class="panel__text">
-            <div class="panel__idx mono"><span>04 / 04</span><span>JR Consultoria · 2026</span></div>
+            <div class="panel__idx mono"><span>05 / 05</span><span>JR Consultoria · 2026</span></div>
             <div class="panel__cat mono">Evento · Aquisição</div>
             <h3>Working Day<br><span class="serif it">com a Red Bull</span></h3>
             <p>Evento que idealizei para apresentar a JR aos calouros da UFPR e atraí-los para o processo seletivo. Organizei as edições do 1º e do 2º semestre, ambas em parceria com a Red Bull.</p>
@@ -1007,7 +1065,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         </article>
 
       </div>
-      <div class="hprog mono"><span class="hprog__n" data-hprog-n>01</span><span class="hprog__bar"><i data-hprog></i></span><span>04</span></div>
+      <div class="hprog mono"><span class="hprog__n" data-hprog-n>01</span><span class="hprog__bar"><i data-hprog></i></span><span>05</span></div>
     </div>
   </div>
 </section>
@@ -1047,8 +1105,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
             <div class="use"><span class="mono">Claude</span><b>Escrita e revisão</b><p>Newsletter JR News, posts do LinkedIn do Trajetória e propostas.</p></div>
             <div class="use"><span class="mono">Claude Skills</span><b>Pesquisa e curadoria</b><p>Pauta do blog a partir de fontes confiáveis.</p></div>
             <div class="use"><span class="mono">Claude Code · Python</span><b>Dados</b><p>Leitura de métricas, consolidação e relatórios.</p></div>
-            <div class="use"><span class="mono">HTML · CSS · JS</span><b>Código</b><p>Landing pages, automações e este portfólio.</p></div>
-            <div class="use"><span class="mono">Claude Code</span><b>Vídeo</b><p>Edição no DaVinci Resolve com o ResolveAgent.</p></div>
+            <div class="use"><span class="mono">Claude Code · JS</span><b>Código e produto</b><p>O app Business English, landing pages e este portfólio.</p></div>
+            <div class="use"><span class="mono">Claude Code · Skills</span><b>Vídeo</b><p>Skills que editam Reels sozinhas e o ResolveAgent no DaVinci.</p></div>
             <div class="use"><span class="mono">Claude Cowork</span><b>Planejamento</b><p>Estruturação de áreas, processos e eventos.</p></div>
           </div>
         </article>
@@ -1124,12 +1182,14 @@ Regra: se a solução nativa leva 10 s de clique dele e a sua leva 10 min de có
         <!-- 04 -->
         <article class="lstep" data-reveal>
           <div class="lstep__q mono"><span>Nível 04</span>Ferramentas internas, dashboards e agentes</div>
-          <h3>Quatro ferramentas que eu <span class="serif it">construí</span> para resolver problemas reais.</h3>
+          <h3>Agentes, skills e apps que eu <span class="serif it">construí</span> para resolver problemas reais.</h3>
           <div class="toolsgrid">
             <div class="tcard"><div class="tcard__top"><span class="mono">Agente</span><span class="live">em uso</span></div><b>ResolveAgent</b><p>Edita vídeos no DaVinci Resolve a partir de pedidos em linguagem natural. 14 skills, instalação documentada e guia de primeiro uso.</p><span class="mono tcard__stack">Claude Code · Python · Whisper · Remotion</span></div>
             <div class="tcard"><div class="tcard__top"><span class="mono">Dashboard</span><span class="live">em uso</span></div><b>Painel de métricas</b><p>LinkedIn Ads, Instagram, GA4 e Search Console em um só lugar, com leitura de tendências.</p><span class="mono tcard__stack">Looker Studio · Google Sheets</span></div>
             <div class="tcard"><div class="tcard__top"><span class="mono">Automação</span><span class="live">em uso</span></div><b>Pipeline de dados</b><p>Coleta e consolida os dados de cada canal sem trabalho manual, alimentando o painel.</p><span class="mono tcard__stack">n8n · Python · Claude Code</span></div>
             <div class="tcard"><div class="tcard__top"><span class="mono">Skill de IA</span><span class="live">em uso</span></div><b>Pauta do blog</b><p>Lê fontes confiáveis do Brasil e do exterior e entrega pautas e ângulos para 6 categorias.</p><span class="mono tcard__stack">Claude Skills</span></div>
+            <div class="tcard"><div class="tcard__top"><span class="mono">App</span><span class="live">no ar</span></div><b>Business English</b><p>App estilo Duolingo de inglês para negócios, com plano de estudos que se adapta toda semana.</p><span class="mono tcard__stack">Claude Code · JavaScript · PWA · Netlify</span></div>
+            <div class="tcard"><div class="tcard__top"><span class="mono">Skills de vídeo</span><span class="live">em uso</span></div><b>Editor, video-pessoa e video-ia</b><p>Três skills que levam da ideia ao Reels pronto: roteiro, cortes, legenda, motion e conferência.</p><span class="mono tcard__stack">Claude Code · Python · FFmpeg · Remotion</span></div>
           </div>
         </article>
 
@@ -1143,6 +1203,8 @@ Regra: se a solução nativa leva 10 s de clique dele e a sua leva 10 min de có
             <div class="prod__row" role="row"><span role="cell"><i class="dot"></i>ResolveAgent</span><span role="cell">Eu e os consultores de marketing</span><span role="cell">Edição por etapas com aprovação; <b>14 skills</b></span></div>
             <div class="prod__row" role="row"><span role="cell"><i class="dot"></i>Skill de pauta do blog</span><span role="cell">Consultores que assumiram o marketing</span><span role="cell">Pauta em <b>6 categorias</b> sem pesquisa manual</span></div>
             <div class="prod__row" role="row"><span role="cell"><i class="dot"></i>Fluxos de conteúdo com IA</span><span role="cell">Time de marketing da JR</span><span role="cell">Newsletter <b>semanal</b> e landing pages mantidas após o repasse da área</span></div>
+            <div class="prod__row" role="row"><span role="cell"><i class="dot"></i>Skill editor de vídeo</span><span role="cell">Perfil Papo de Fundador</span><span role="cell">Entrevistas editadas com <b>conferência automática</b></span></div>
+            <div class="prod__row" role="row"><span role="cell"><i class="dot"></i>App Business English</span><span role="cell">Aberto ao público na web</span><span role="cell"><b>78 lições</b> e plano que se adapta</span></div>
           </div>
           <div class="lab__final"><span class="lab__check">✓</span><div><b>5 de 5 níveis.</b> Do uso diário a ferramentas em produção, com pessoas usando e resultado medido.</div></div>
         </article>
@@ -1152,12 +1214,90 @@ Regra: se a solução nativa leva 10 s de clique dele e a sua leva 10 min de có
   </div>
 </section>
 
+<!-- LABORATÓRIO DE IA -->
+<section class="sec" id="lab">
+  <div class="wrap">
+    <div class="more__head">
+      <div>
+        <div class="label mono"><span data-scramble>04 — Laboratório de IA</span></div>
+        <h2 class="h2"><span class="line-mask"><span class="split-up" data-split data-reveal-split>Tudo que eu</span></span><span class="line-mask"><span class="split-up serif it" data-split data-reveal-split style="--d:.15s">construí com IA</span></span></h2>
+      </div>
+      <p class="lab2__intro" data-reveal>Cada projeto tem uma vitrine no <a class="ulink" style="font-size:inherit" href="https://github.com/ricardogasparelo" target="_blank" rel="noopener">GitHub</a> com o problema, a solução e a arquitetura. O código fica privado: peça uma demonstração.</p>
+    </div>
+    <div class="lab2">
+      <article class="lab2__card" data-reveal>
+        <div class="lab2__top mono"><span>App · Educação</span><span class="lab2__st">● no ar</span></div>
+        <h4>Business English</h4>
+        <p>App estilo Duolingo de inglês para negócios: avaliação adaptativa, plano que se ajusta toda semana, conversas guiadas e relatório semanal.</p>
+        <span class="mono lab2__stack">Claude Code · JavaScript · PWA · Netlify Functions</span>
+        <div class="lab2__links"><a href="https://zingy-custard-e9831e.netlify.app" target="_blank" rel="noopener">Abrir o app ↗</a><a href="https://github.com/ricardogasparelo/business-english-app" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="lab2__card" data-reveal style="--d:0.08s">
+        <div class="lab2__top mono"><span>Agente · Vídeo</span><span class="lab2__st">● em uso</span></div>
+        <h4>ResolveAgent</h4>
+        <p>Agente que edita dentro do DaVinci Resolve pela API Python: corta no beat, tira silêncios, legenda e cria motion, por etapas com aprovação.</p>
+        <span class="mono lab2__stack">Claude Code · Python · DaVinci API · Whisper · Remotion</span>
+        <div class="lab2__links"><a href="https://github.com/ricardogasparelo/resolve-agent" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="lab2__card" data-reveal style="--d:0.16s">
+        <div class="lab2__top mono"><span>Skill · Vídeo</span><span class="lab2__st">● em uso</span></div>
+        <h4>Editor de vídeo</h4>
+        <p>Edita as entrevistas do Papo de Fundador em português: transcrição, cortes, câmera virtual, legenda, palavras 3D atrás da pessoa e conferência.</p>
+        <span class="mono lab2__stack">Claude Code · Python · FFmpeg · faster-whisper · Remotion</span>
+        <div class="lab2__links"><a href="https://github.com/ricardogasparelo/skill-editor-video" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="lab2__card" data-reveal>
+        <div class="lab2__top mono"><span>Skill · Vídeo</span><span class="lab2__st">● pronta</span></div>
+        <h4>video-pessoa</h4>
+        <p>Da ideia ao Reels de uma pessoa falando: entrevista, roteiro com direção, prévia antes de gravar, cortes automáticos e edição com motion.</p>
+        <span class="mono lab2__stack">Claude Code · Python · Remotion · detecção de rosto</span>
+        <div class="lab2__links"><a href="https://github.com/ricardogasparelo/skill-video-pessoa" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="lab2__card" data-reveal style="--d:0.08s">
+        <div class="lab2__top mono"><span>Skill · Motion</span><span class="lab2__st">● pronta</span></div>
+        <h4>video-ia</h4>
+        <p>Vídeos 100% animados a partir da narração: 47 blocos visuais, 19 temas, legenda palavra a palavra e conferência automática.</p>
+        <span class="mono lab2__stack">Claude Code · Remotion · TypeScript · FFmpeg</span>
+        <div class="lab2__links"><a href="https://github.com/ricardogasparelo/skill-video-ia" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="lab2__card" data-reveal style="--d:0.16s">
+        <div class="lab2__top mono"><span>E-book · Skill</span><span class="lab2__st">● pronto</span></div>
+        <h4>Fábrica de cortes com IA</h4>
+        <p>E-book sobre o mercado de cortes de lives de GTA 6 e a skill que transforma uma live em dezenas de cortes verticais com legenda e textos.</p>
+        <span class="mono lab2__stack">Claude Code · Whisper · FFmpeg · HTML → PDF</span>
+        <div class="lab2__links"><a href="https://github.com/ricardogasparelo/skill-fabrica-de-cortes" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+      <article class="lab2__card" data-reveal>
+        <div class="lab2__top mono"><span>Automação · Dados</span><span class="lab2__st">● em uso</span></div>
+        <h4>Relatórios automatizados</h4>
+        <p>n8n e Python coletam LinkedIn Ads, Instagram, GA4 e Search Console e alimentam o Looker Studio. 3 a 5 h economizadas por semana.</p>
+        <span class="mono lab2__stack">n8n · Python · Claude Code · Looker Studio</span>
+        <div class="lab2__links"><a href="#ia">Ver detalhes ↓</a></div>
+      </article>
+      <article class="lab2__card" data-reveal style="--d:0.08s">
+        <div class="lab2__top mono"><span>Skill · Conteúdo</span><span class="lab2__st">● em uso</span></div>
+        <h4>Pauta editorial</h4>
+        <p>Lê fontes confiáveis do Brasil e do exterior e entrega pautas e ângulos para as 6 categorias do blog da JR.</p>
+        <span class="mono lab2__stack">Claude Skills</span>
+        <div class="lab2__links"><a href="#ia">Ver detalhes ↓</a></div>
+      </article>
+      <article class="lab2__card" data-reveal style="--d:0.16s">
+        <div class="lab2__top mono"><span>Web · Portfólio</span><span class="lab2__st">● no ar</span></div>
+        <h4>Este portfólio</h4>
+        <p>Site em arquivo único com shader WebGL e animações por scroll, feito com HTML, CSS e JavaScript puros com o Claude Code.</p>
+        <span class="mono lab2__stack">Claude Code · HTML · CSS · JavaScript · WebGL</span>
+        <div class="lab2__links"><a href="https://github.com/ricardogasparelo/github.iogithub.io" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- MORE PROJECTS -->
 <section class="sec" id="mais">
   <div class="wrap">
     <div class="more__head">
       <div>
-        <div class="label mono"><span data-scramble>04 — Mais projetos</span></div>
+        <div class="label mono"><span data-scramble>05 — Mais projetos</span></div>
         <h2 class="h2"><span class="line-mask"><span class="split-up" data-split data-reveal-split>Outras</span></span><span class="line-mask"><span class="split-up serif it" data-split data-reveal-split style="--d:.15s">frentes</span></span></h2>
       </div>
       <div class="filters" role="group" aria-label="Filtrar projetos">
@@ -1220,7 +1360,7 @@ Regra: se a solução nativa leva 10 s de clique dele e a sua leva 10 min de có
 <!-- SKILLS -->
 <section class="sec" id="competencias" style="padding-top:0">
   <div class="wrap">
-    <div class="label mono"><span data-scramble>05 — Competências</span></div>
+    <div class="label mono"><span data-scramble>06 — Competências</span></div>
     <h2 class="h2"><span class="line-mask"><span class="split-up" data-split data-reveal-split>O que eu</span></span><span class="line-mask"><span class="split-up serif it" data-split data-reveal-split style="--d:.15s">levo para o time</span></span></h2>
 
     <div class="skills" role="tablist" aria-label="Competências">
@@ -1259,11 +1399,11 @@ Regra: se a solução nativa leva 10 s de clique dele e a sua leva 10 min de có
 <!-- TOOLS -->
 <section class="sec" id="ferramentas" style="padding-top:0">
   <div class="wrap">
-    <div class="label mono"><span data-scramble>06 — Ferramentas</span></div>
+    <div class="label mono"><span data-scramble>07 — Ferramentas</span></div>
     <div class="tools">
       <div class="trow" data-reveal="fade"><h3><small>A</small>Dados e análise</h3><div class="tpills" data-pills="Python (Colab)|Excel|Google Sheets|Looker Studio|Google Analytics 4|Search Console"></div></div>
-      <div class="trow" data-reveal="fade"><h3><small>B</small>IA e automação</h3><div class="tpills" data-pills="Claude Code|Claude Cowork|n8n|ChatGPT|Engenharia de prompts"></div></div>
-      <div class="trow" data-reveal="fade"><h3><small>C</small>Desenvolvimento</h3><div class="tpills" data-pills="HTML|CSS|JavaScript|Git|GitHub Pages|DaVinci Resolve API|Remotion|Whisper|ffmpeg"></div></div>
+      <div class="trow" data-reveal="fade"><h3><small>B</small>IA e automação</h3><div class="tpills" data-pills="Claude Code|Claude Skills|Agentes de IA|Claude Cowork|n8n|ChatGPT|Engenharia de prompts"></div></div>
+      <div class="trow" data-reveal="fade"><h3><small>C</small>Desenvolvimento</h3><div class="tpills" data-pills="HTML|CSS|JavaScript|TypeScript|Python|React (Remotion)|PWA|Netlify Functions|Git e GitHub|DaVinci Resolve API|Whisper|ffmpeg"></div></div>
       <div class="trow" data-reveal="fade"><h3><small>D</small>Gestão</h3><div class="tpills" data-pills="Google Workspace|PowerPoint|RD Station CRM"></div></div>
       <div class="trow" data-reveal="fade"><h3><small>E</small>Marketing</h3><div class="tpills" data-pills="Google Ads|Meta Ads|TikTok Ads|LinkedIn Ads|ChatGPT Ads|Shopify|Yampi"></div></div>
     </div>
@@ -1273,7 +1413,7 @@ Regra: se a solução nativa leva 10 s de clique dele e a sua leva 10 min de có
 <!-- TIMELINE -->
 <section class="sec" id="trajetoria" style="padding-top:0">
   <div class="wrap">
-    <div class="label mono"><span data-scramble>07 — Trajetória</span></div>
+    <div class="label mono"><span data-scramble>08 — Trajetória</span></div>
     <h2 class="h2"><span class="line-mask"><span class="split-up" data-split data-reveal-split>Até</span></span><span class="line-mask"><span class="split-up serif it" data-split data-reveal-split style="--d:.15s">aqui</span></span></h2>
     <div class="tline">
       <div class="tline__rail"><i data-rail></i></div>
@@ -1281,7 +1421,8 @@ Regra: se a solução nativa leva 10 s de clique dele e a sua leva 10 min de có
       <div class="titem"><span class="mono">2026</span><div><h3>Gerente de Marketing, JR Consultoria</h3><p>Liderança da área, processos entre times, dados e geração de demanda na empresa júnior da UFPR.</p></div></div>
       <div class="titem"><span class="mono">2026.1</span><div><h3>Working Day com público recorde</h3><p>Evento de lançamento do processo seletivo, em parceria com a Red Bull, com o maior público desde 2021.</p></div></div>
       <div class="titem"><span class="mono">2026</span><div><h3>Trajetória: 30 parceiros</h3><p>A maior edição da feira em parceiros e a feira de carreiras universitária com mais congressistas inscritos do Sul.</p></div></div>
-      <div class="titem"><span class="mono">2026</span><div><h3>Automação e IA</h3><p>Relatórios automatizados com n8n, Python e Looker Studio (3 a 5 h economizadas por semana), o ResolveAgent e a skill de pauta, todos em uso pelo time de marketing.</p></div></div>
+      <div class="titem"><span class="mono">2026</span><div><h3>Automação e IA</h3><p>Relatórios automatizados com n8n, Python e Looker Studio (3 a 5 h economizadas por semana), o ResolveAgent e a skill de pauta, em uso pelo time de marketing.</p></div></div>
+      <div class="titem"><span class="mono">Nov 2026</span><div><h3>App e skills de vídeo com IA</h3><p>Coloquei no ar o Business English, um app de inglês para negócios no estilo do Duolingo, e criei três skills que levam da ideia ao Reels editado. Tudo documentado no GitHub.</p></div></div>
       <div class="titem"><span class="mono">Agora</span><div><h3>Próximo capítulo</h3><p>Graduação em Administração na UFPR e aberto a oportunidades em gestão, projetos, dados, comercial e marketing.</p></div></div>
     </div>
   </div>
@@ -1290,13 +1431,14 @@ Regra: se a solução nativa leva 10 s de clique dele e a sua leva 10 min de có
 <!-- CONTACT -->
 <section class="contact" id="contato">
   <div class="wrap">
-    <div class="label mono"><span data-scramble>08 — Contato</span></div>
+    <div class="label mono"><span data-scramble>09 — Contato</span></div>
     <h2 class="contact__big"><span class="line-mask"><span class="split-up wavey" data-split data-reveal-split>Vamos</span></span><span class="line-mask"><span class="split-up serif it wavey" data-split data-reveal-split style="--d:.15s">conversar?</span></span></h2>
     <div class="contact__row">
       <div>
         <p>Estou aberto a estágios e oportunidades em gestão, projetos, dados, comercial e marketing. Respondo rápido.</p>
         <div class="contact__links">
           <a class="ulink" href="https://www.linkedin.com/in/ricardo-gasparelo-212381380/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="ulink" href="https://github.com/ricardogasparelo" target="_blank" rel="noopener">GitHub ↗</a>
           <a class="ulink" href="Curriculo_Ricardo_Gasparelo.pdf" download>Currículo (PDF) ↓</a>
           <a class="ulink" href="mailto:ricardogasparelo@gmail.com">ricardogasparelo@gmail.com</a>
         </div>

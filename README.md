@@ -3,7 +3,8 @@
 **Gestão · Dados · Automação · Marketing**  
 Estudante de Administração na UFPR e Gerente de Marketing da JR Consultoria (empresa júnior da UFPR). Conduzo projetos de ponta a ponta, organizo processos, transformo dados em decisões e construo automações com IA (Claude Code, n8n e Python).
 
-🔗 **Site:** `https://SEU-USUARIO.github.io` <!-- troque pelo seu link depois de publicar -->  
+🔗 **Site:** https://githubiogithubio.vercel.app  
+🐙 **GitHub:** https://github.com/ricardogasparelo  
 📄 **Currículo:** [Curriculo_Ricardo_Gasparelo.pdf](Curriculo_Ricardo_Gasparelo.pdf)  
 💼 **LinkedIn:** [Ricardo Gasparelo](https://www.linkedin.com/in/ricardo-gasparelo-212381380/)  
 ✉️ **E-mail:** ricardogasparelo@gmail.com  
@@ -26,13 +27,18 @@ Estudante de Administração na UFPR e Gerente de Marketing da JR Consultoria (e
 | **1. Construo com IA no dia a dia** | Escrita, pesquisa, dados, código, vídeo e planejamento com Claude, Claude Code e Cowork |
 | **2. Prompts estruturados e experimentos com LLMs** | Trechos reais do ResolveAgent: prompt de primeiro uso, protocolo de execução e regras de parada |
 | **3. Automações que economizam horas reais** | Pipeline de relatórios (n8n + Python + Looker Studio): **3 a 5 h por semana** |
-| **4. Ferramentas, dashboards e agentes** | ResolveAgent (agente), painel de métricas (dashboard), pipeline de dados (automação), skill de pauta |
+| **4. Ferramentas, dashboards e agentes** | ResolveAgent (agente), app Business English, 3 skills de vídeo, painel de métricas, pipeline de dados, skill de pauta |
 | **5. Em produção, usado por outras pessoas** | Relatórios, ResolveAgent, skill de pauta e fluxos de conteúdo em uso pelo time de marketing da JR |
 
 ## Projetos
 
 ### 🤖 Tecnologia, IA e automação
-- **ResolveAgent — agente de edição de vídeo com IA** — criado no Claude Code, edita dentro do DaVinci Resolve Studio pela API Python: corta no beat e nos silêncios, transcreve em pt-BR (Whisper) e legenda, cataloga B-roll, sugere match cuts, cria texto animado, lower thirds e transições em Remotion (React) e exporta para Reels/YouTube. Trabalha por etapas com checkpoint e backup, aprende o estilo do editor; 14 skills e 22 receitas a partir de 45 referências. Em uso por mim e pelos consultores de marketing.
+- **[Business English](https://github.com/ricardogasparelo/business-english-app)** — app estilo Duolingo de inglês para negócios ([abrir](https://zingy-custard-e9831e.netlify.app)): 78 lições (A1–C2), avaliação adaptativa, plano que se ajusta toda semana, 11 conversas guiadas, relatório semanal e conta na nuvem. Feito com Claude Code, JavaScript puro, PWA e Netlify Functions.
+- **[Skill editor de vídeo](https://github.com/ricardogasparelo/skill-editor-video)** — edita as entrevistas do Papo de Fundador em português: transcrição, cortes, câmera virtual, legenda, motion 3D atrás da pessoa e conferência de qualidade.
+- **[Skill video-pessoa](https://github.com/ricardogasparelo/skill-video-pessoa)** — da ideia ao Reels de uma pessoa falando: entrevista, roteiro com direção, prévia antes de gravar, cortes e edição com motion.
+- **[Skill video-ia](https://github.com/ricardogasparelo/skill-video-ia)** — vídeos 100% animados a partir da narração: 47 blocos visuais, 19 temas e conferência automática.
+- **[Fábrica de cortes com IA](https://github.com/ricardogasparelo/skill-fabrica-de-cortes)** — e-book + skill que transforma lives em dezenas de cortes verticais.
+- **[ResolveAgent](https://github.com/ricardogasparelo/resolve-agent) — agente de edição de vídeo com IA** — criado no Claude Code, edita dentro do DaVinci Resolve Studio pela API Python: corta no beat e nos silêncios, transcreve em pt-BR (Whisper) e legenda, cataloga B-roll, sugere match cuts, cria texto animado, lower thirds e transições em Remotion (React) e exporta para Reels/YouTube. Trabalha por etapas com checkpoint e backup, aprende o estilo do editor; 14 skills e 22 receitas a partir de 45 referências. Em uso por mim e pelos consultores de marketing.
 - **Relatórios automatizados de métricas** — fluxos em n8n e scripts em Python (feitos com Claude Code) coletam LinkedIn Ads, Instagram, GA4 e Search Console, consolidam em planilhas e alimentam dashboards no Looker Studio. Economiza de 3 a 5 h por semana.
 - **Skill de pauta editorial (Claude)** — lê fontes confiáveis do Brasil e do exterior e sugere pautas para as 6 categorias do blog da JR. Usada pelos consultores que assumiram o marketing.
 
@@ -54,27 +60,21 @@ Estudante de Administração na UFPR e Gerente de Marketing da JR Consultoria (e
 
 - **Dados e análise:** `Python (Colab)` `Excel` `Google Sheets` `Looker Studio` `Google Analytics 4` `Google Search Console`
 - **IA e automação:** `Claude Code` `Claude (Cowork, skills e agentes)` `n8n` `ChatGPT` `Engenharia de prompts`
-- **Desenvolvimento e web:** `HTML` `CSS` `Git` `GitHub Pages` `DaVinci Resolve API` `Remotion` `Whisper` `ffmpeg`
+- **Desenvolvimento e web:** `HTML` `CSS` `JavaScript` `TypeScript` `Python` `React (Remotion)` `PWA` `Netlify Functions` `Git` `DaVinci Resolve API` `Whisper` `ffmpeg`
 - **Gestão e produtividade:** `Google Workspace` `PowerPoint` `RD Station (CRM)`
 - **Marketing e e-commerce:** `Google Ads` `Meta Ads` `TikTok Ads` `LinkedIn Ads` `ChatGPT Ads` `Shopify` `Yampi`
 
 ---
 
-## Como publicar este site no GitHub Pages
+## Publicação
 
-1. Crie uma conta em [github.com](https://github.com) (se ainda não tiver).
-2. Crie um repositório novo chamado **`SEU-USUARIO.github.io`** (troque pelo seu nome de usuário) e marque como **Public**.
-   - Com esse nome, o site fica em `https://SEU-USUARIO.github.io`. Com outro nome (ex.: `portfolio`), fica em `https://SEU-USUARIO.github.io/portfolio`.
-3. No repositório, clique em **Add file → Upload files** e envie os três arquivos: `index.html`, `README.md` e `Curriculo_Ricardo_Gasparelo.pdf`. Clique em **Commit changes**.
-4. Vá em **Settings → Pages**, em *Build and deployment* escolha **Deploy from a branch**, branch **main**, pasta **/ (root)** e salve.
-5. Em 1 a 2 minutos o site estará no ar. Atualize o link no topo deste README.
-
-Para editar textos depois, abra o `index.html` no próprio GitHub (ícone de lápis), altere e faça o commit.
+O site é publicado pela Vercel a partir deste repositório: cada commit na branch `main` atualiza https://githubiogithubio.vercel.app.
 
 ## Estrutura
 
 ```
 ├── index.html                       # site em arquivo único: HTML, CSS e JavaScript puros (shader WebGL, animações por scroll, sem frameworks)
+├── imagens/                         # prints do app Business English
 ├── Curriculo_Ricardo_Gasparelo.pdf  # currículo para download
 └── README.md
 ```
