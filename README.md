@@ -33,7 +33,11 @@ Estudante de Administração na UFPR e Gerente de Marketing da JR Consultoria (e
 ## Projetos
 
 ### 🤖 Tecnologia, IA e automação
+- **[Boa fala](https://github.com/ricardogasparelo/boa-fala-app)** — app estilo Duolingo de oratória que escuta a fala no celular e mede ritmo, vícios, pausas e clareza, com plano adaptativo e relatório semanal.
 - **[Business English](https://github.com/ricardogasparelo/business-english-app)** — app estilo Duolingo de inglês para negócios ([abrir](https://zingy-custard-e9831e.netlify.app)): 78 lições (A1–C2), avaliação adaptativa, plano que se ajusta toda semana, 11 conversas guiadas, relatório semanal e conta na nuvem. Feito com Claude Code, JavaScript puro, PWA e Netlify Functions.
+- **[Fábrica de Cortes com IA](https://github.com/ricardogasparelo/skill-fabrica-de-cortes)** — negócio completo em 6 frentes: cortes automáticos de lives, postagem, curso em PDF, landing page com checkout ([ver no ar](https://fabrica-de-cortes.netlify.app)) e área de membros própria com liberação por webhook.
+- **[Cortes ao vivo](https://github.com/ricardogasparelo/skill-cortes-ao-vivo)** — acompanha lives em tempo real e entrega cortes 9:16 com legenda e texto do post, 100% local.
+- **[Postagem automática](https://github.com/ricardogasparelo/skill-postar-redes)** — posta Reels e Shorts por fila pelas APIs oficiais do Instagram e do YouTube.
 - **[Skill editor de vídeo](https://github.com/ricardogasparelo/skill-editor-video)** — edita as entrevistas do Papo de Fundador em português: transcrição, cortes, câmera virtual, legenda, motion 3D atrás da pessoa e conferência de qualidade.
 - **[Skill video-pessoa](https://github.com/ricardogasparelo/skill-video-pessoa)** — da ideia ao Reels de uma pessoa falando: entrevista, roteiro com direção, prévia antes de gravar, cortes e edição com motion.
 - **[Skill video-ia](https://github.com/ricardogasparelo/skill-video-ia)** — vídeos 100% animados a partir da narração: 47 blocos visuais, 19 temas e conferência automática.
